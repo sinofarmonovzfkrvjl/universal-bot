@@ -7,7 +7,7 @@ from aiogram.filters import CommandStart
 from keyboards import languages_button, database, menus_button
 from states import Translate
 from aiogram.client.session.aiohttp import AiohttpSession
-# http://proxy.server:3128/
+
 bot = Bot("5904607271:AAH-edy50mxak7BhgfeCB-9oLnlrK5QMPiM")
 dp = Dispatcher()
 
