@@ -8,7 +8,6 @@ from keyboards import languages_button, database, menus_button
 from states import Translate
 from aiogram.client.session.aiohttp import AiohttpSession
 
-bot = Bot("5904607271:AAH-edy50mxak7BhgfeCB-9oLnlrK5QMPiM")
 dp = Dispatcher()
 
 @dp.message(CommandStart())
@@ -63,6 +62,7 @@ async def shutdown(bot: Bot):
 async def start():
     # session = AiohttpSession(proxy="http://proxy.server:3128/")
     # , session=session
+    bot = Bot("5904607271:AAH-edy50mxak7BhgfeCB-9oLnlrK5QMPiM")
     await bot.set_my_commands([
         types.BotCommand(command='/start', description="botni ishga tushurish")
     ])
